@@ -1,0 +1,8 @@
+---
+- name:Install docker 
+  hosts:node2
+  tasks:
+    -name:install docker
+     ansible.builtin.yum:
+       name:docker
+       state:latest
